@@ -1,27 +1,3 @@
-================ Приєднатись до бази ===================================
-$db_conn = mysqli_connect("localhost", "root", "Qwe45t67u", "tel09");
-mysqli_set_charset($db_conn, 'utf8');
-    $date = Date('m/d/Y');
-
-$rez = "SELECT * FROM street";
-====================== Вивести список вулиць ===============
-if (!$db_conn):
-	echo "<strong>";
-	echo "База даних тимчасово не працює.<br>";
-	echo "<hr></strong>";
-else:
-$result = mysqli_query($db_conn,$rez) or die("Query failed1");
-$num = mysqli_num_rows($result);
-endif;
-$i = 0;
-$s = "";
-echo "<option VALUE=''>";
-      while ($line = mysqli_fetch_array($result, MYSQLI_NUM)) {
-$n = $line[0];
-$s = $line[1];
-echo "<option VALUE='$n'>".$s;
-	$i++;
-}
 ============================================================
 Відкрити базу телефонів і створити запит!
 =============================================================
