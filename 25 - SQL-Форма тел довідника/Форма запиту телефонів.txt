@@ -1,7 +1,7 @@
 ============================================================
 Відкрити базу телефонів і створити запит!
 =============================================================
-$db_conn = mysqli_connect("mysql.zzz.com.ua", "rymar6", "Hbvfhdj12345", "rymar6");
+$db_conn = mysqli_connect("localhost", "root", "Qwe45t67u", "tel09");
 mysqli_set_charset($db_conn, 'utf8');
     $date = Date('m/d/Y');
 
